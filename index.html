@@ -37,11 +37,19 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 40%;
-            height: 40%;
-            background: linear-gradient(135deg, rgba(229, 9, 20, 0.1) 0%, transparent 60%);
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(135deg, rgba(229, 9, 20, 0.15) 0%, transparent 70%);
             clip-path: polygon(100% 0, 0 0, 100% 100%);
             z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .triangle-bg {
+                width: 40%;
+                height: 40%;
+                background: linear-gradient(135deg, rgba(229, 9, 20, 0.1) 0%, transparent 60%);
+            }
         }
     </style>
 </head>
@@ -50,14 +58,14 @@
     <nav class="fixed w-full top-0 z-50 glass-nav">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#inicio" class="flex items-center gap-3 z-10 hover:scale-105 transition-transform">
-                <img src="LOGO WH.png" alt="L.A. Films Logo" class="h-10 w-auto object-contain">
+                <img src="LOGO WH.png" alt="L.A. Films Logo" class="h-8 md:h-10 w-auto object-contain">
             </a>
 
-            <div class="flex items-center gap-6 z-10">
-                <a href="https://www.instagram.com/lincolnalm_films/" target="_blank" class="text-gray-400 hover:text-red-custom text-2xl transition-transform hover:scale-110">
+            <div class="flex items-center gap-5 md:gap-6 z-10">
+                <a href="https://www.instagram.com/lincolnalm_films/" target="_blank" class="text-gray-400 hover:text-red-custom text-xl md:text-2xl transition-transform hover:scale-110">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://wa.me/5511941571824?text=Ol%C3%A1%20Lincoln!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20de%20v%C3%ADdeo." target="_blank" class="text-gray-400 hover:text-green-500 text-2xl transition-transform hover:scale-110">
+                <a href="https://wa.me/5511941571824?text=Ol%C3%A1%20Lincoln!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20de%20v%C3%ADdeo." target="_blank" class="text-gray-400 hover:text-green-500 text-xl md:text-2xl transition-transform hover:scale-110">
                     <i class="fab fa-whatsapp"></i>
                 </a>
                 <a href="https://wa.me/5511941571824?text=Ol%C3%A1%20Lincoln!%20Gostaria%20de%20agendar%20uma%20conversa%20para%20receber%20uma%20proposta." target="_blank" class="hidden md:inline-block bg-red-custom hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition-all uppercase text-sm tracking-wider">
@@ -67,48 +75,50 @@
         </div>
     </nav>
 
-    <section id="inicio" class="relative min-h-screen flex items-center pt-10 overflow-hidden">
+    <section id="inicio" class="relative min-h-screen flex items-center py-10 overflow-hidden">
         <div class="triangle-bg"></div>
         
-        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12 pt-10 md:pt-0">
-            <div class="w-full md:w-3/5 text-left order-2 md:order-1">
-                <p class="text-red-custom font-bold tracking-widest uppercase mb-4 text-sm">L.A. Films | Por Lincoln Almeida</p>
-                <h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-6 uppercase">
-                    RETENÇÃO QUE GERA <span class="text-red-custom">RESULTADOS.</span>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-12">
+            
+            <div class="w-full md:w-2/5 flex justify-center order-1 md:order-2 mt-4 md:mt-0">
+                <div class="relative w-full max-w-[280px] md:max-w-[340px] aspect-[864/1184] border-4 border-zinc-800 rounded-3xl overflow-hidden shadow-2xl shadow-red-custom/10 rotate-2 hover:rotate-0 transition-all duration-500 group">
+                    <img src="FOTOO221.png" alt="Lincoln Almeida - L.A. Films" class="w-full h-full object-cover object-center-top">
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6 text-white z-10">
+                        <p class="font-bold text-base md:text-lg">Lincoln Almeida</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Diretor de Estratégia Audiovisual</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-3/5 text-center md:text-left order-2 md:order-1">
+                <p class="text-red-custom font-bold tracking-widest uppercase mb-3 text-xs md:text-sm">L.A. Films | Por Lincoln Almeida</p>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-tight mb-5 md:mb-6 uppercase">
+                    RETENÇÃO QUE GERA <br class="hidden md:block"><span class="text-red-custom">RESULTADOS.</span>
                 </h1>
-                <p class="text-xl text-gray-400 mb-8 max-w-2xl font-light">
+                <p class="text-base md:text-xl text-gray-400 mb-8 max-w-2xl font-light mx-auto md:mx-0">
                     Desde a autoridade de um consultório para dentistas, advogados e psicólogos, até a imensidão de imagens épicas com drone. Oferecemos o melhor porque trabalhamos com o melhor.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#portfolio" class="bg-transparent border-2 border-red-custom text-white hover:bg-red-custom font-bold py-3 px-8 rounded-full transition-all uppercase tracking-wider text-sm">
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#portfolio" class="bg-transparent border-2 border-red-custom text-white hover:bg-red-custom font-bold py-3 px-8 rounded-full transition-all uppercase tracking-wider text-xs md:text-sm">
                         Ver Meus Trabalhos
                     </a>
                 </div>
             </div>
             
-            <div class="w-full md:w-2/5 flex justify-center order-1 md:order-2">
-                <div class="relative w-full max-w-[340px] aspect-[864/1184] border-4 border-zinc-800 rounded-3xl overflow-hidden shadow-2xl shadow-red-custom/10 rotate-2 hover:rotate-0 transition-all duration-500 group">
-                    <img src="FOTOO221.png" alt="Lincoln Almeida - L.A. Films" class="w-full h-full object-cover object-center-top">
-                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
-                    <div class="absolute bottom-6 left-6 text-white z-10">
-                        <p class="font-bold text-lg">Lincoln Almeida</p>
-                        <p class="text-gray-400 text-sm">Diretor de Estratégia Audiovisual</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <section id="portfolio" class="py-24 bg-zinc-900 border-t border-zinc-800">
+    <section id="portfolio" class="py-20 md:py-24 bg-zinc-900 border-t border-zinc-800">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-black text-white mb-4 uppercase">Nosso <span class="text-red-custom">Portfólio</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Confira os últimos projetos de alta retenção produzidos para nossos clientes.</p>
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-white mb-3 md:mb-4 uppercase">Nosso <span class="text-red-custom">Portfólio</span></h2>
+                <p class="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">Confira os últimos projetos de alta retenção produzidos para nossos clientes.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch">
                 
-                <div class="w-full max-w-[340px] bg-zinc-800 rounded-2xl p-4 border border-zinc-700 hover:border-red-custom transition-all shadow-xl flex flex-col">
+                <div class="w-full max-w-[320px] md:max-w-[340px] bg-zinc-800 rounded-2xl p-4 border border-zinc-700 hover:border-red-custom transition-all shadow-xl flex flex-col">
                     <div class="relative rounded-xl overflow-hidden aspect-[9/16] bg-black">
                         <iframe src="https://www.instagram.com/p/DTTv0Ttkcls/embed/" class="w-full h-full border-0" scrolling="no" allowtransparency="true"></iframe>
                     </div>
@@ -118,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="w-full max-w-[340px] bg-zinc-800 rounded-2xl p-4 border border-zinc-700 hover:border-red-custom transition-all shadow-xl flex flex-col">
+                <div class="w-full max-w-[320px] md:max-w-[340px] bg-zinc-800 rounded-2xl p-4 border border-zinc-700 hover:border-red-custom transition-all shadow-xl flex flex-col">
                     <div class="relative rounded-xl overflow-hidden aspect-[9/16] bg-black">
                         <iframe src="https://www.instagram.com/p/DR50n81DCLa/embed/" class="w-full h-full border-0" scrolling="no" allowtransparency="true"></iframe>
                     </div>
@@ -128,13 +138,13 @@
                     </div>
                 </div>
 
-                <div class="w-full max-w-[340px] bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-2xl p-8 border border-red-custom/40 flex flex-col justify-center items-center text-center shadow-xl group hover:border-red-custom transition-all aspect-[9/16] md:aspect-auto">
-                    <div class="w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center mb-6 shadow-lg border border-red-custom shadow-red-custom/10 transition-transform group-hover:scale-110">
-                        <i class="fas fa-play text-2xl text-red-custom"></i>
+                <div class="w-full max-w-[320px] md:max-w-[340px] bg-gradient-to-br from-zinc-800 to-zinc-900 rounded-2xl p-8 border border-red-custom/40 flex flex-col justify-center items-center text-center shadow-xl group hover:border-red-custom transition-all aspect-[9/16] md:aspect-auto">
+                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-zinc-800 flex items-center justify-center mb-5 md:mb-6 shadow-lg border border-red-custom shadow-red-custom/10 transition-transform group-hover:scale-110">
+                        <i class="fas fa-play text-xl md:text-2xl text-red-custom"></i>
                     </div>
                     <h3 class="text-2xl font-black text-white mb-2 uppercase tracking-tight leading-tight">O Próximo <br>é o Seu</h3>
-                    <p class="text-gray-400 text-sm mb-8 px-4 font-light">Eleve o nível do seu conteúdo e atraia o público certo para o seu negócio.</p>
-                    <a href="https://wa.me/5511941571824?text=Quero%20agendar%20uma%20grava%C3%A7%C3%A3o%20para%20o%20meu%20pr%C3%B3ximo%20v%C3%ADdeo" target="_blank" class="bg-red-custom hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-all uppercase text-sm tracking-wider">
+                    <p class="text-gray-400 text-xs md:text-sm mb-6 md:mb-8 px-2 font-light">Eleve o nível do seu conteúdo e atraia o público certo para o seu negócio.</p>
+                    <a href="https://wa.me/5511941571824?text=Quero%20agendar%20uma%20grava%C3%A7%C3%A3o%20para%20o%20meu%20pr%C3%B3ximo%20v%C3%ADdeo" target="_blank" class="bg-red-custom hover:bg-red-700 text-white font-bold py-3 px-6 md:px-8 rounded-full transition-all uppercase text-xs md:text-sm tracking-wider">
                         Agendar Gravação
                     </a>
                 </div>
@@ -143,29 +153,29 @@
         </div>
     </section>
 
-    <section id="planos" class="py-24 bg-zinc-custom relative border-t border-zinc-800">
+    <section id="planos" class="py-20 md:py-24 bg-zinc-custom relative border-t border-zinc-800">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="w-full lg:w-1/2">
-                    <h2 class="text-4xl font-black text-white mb-6 uppercase">O Pacote Completo <br><span class="text-red-custom">de Crescimento</span></h2>
-                    <p class="text-gray-400 text-lg mb-6">Trabalhamos de forma estratégica para profissionais presenciais (Dentistas, Advogados, Psicólogos e Esteticistas).</p>
-                    <p class="text-gray-300 mb-8 font-light italic bg-zinc-900/50 p-4 border-l-2 border-red-custom rounded-r-md">"Nosso fluxo capta a essência do seu serviço presencial e o transforma em autoridade digital. É perfeito para quem vende serviços e precisa converter seguidores em clientes."</p>
+            <div class="flex flex-col lg:flex-row items-center gap-10 md:gap-12">
+                <div class="w-full lg:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-black text-white mb-4 md:mb-6 uppercase">O Pacote Completo <br><span class="text-red-custom">de Crescimento</span></h2>
+                    <p class="text-gray-400 text-base md:text-lg mb-5 md:mb-6">Trabalhamos de forma estratégica para profissionais presenciais (Dentistas, Advogados, Psicólogos e Esteticistas).</p>
+                    <p class="text-gray-300 text-sm md:text-base mb-8 font-light italic bg-zinc-900/50 p-4 border-l-2 border-red-custom rounded-r-md text-left">"Nosso fluxo capta a essência do seu serviço presencial e o transforma em autoridade digital. É perfeito para quem vende serviços e precisa converter seguidores em clientes."</p>
                     
-                    <ul class="space-y-4 text-gray-300 md:grid md:grid-cols-2 md:gap-x-8 md:space-y-0">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-red-custom"></i> 8 vídeos de até 1 minuto (Foco em Retenção)</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-red-custom"></i> Criação de Roteiros Estratégicos</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-red-custom"></i> 1 Diária de Gravação Profissional</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-red-custom"></i> Edição Dinâmica + Thumbs + Legendas</li>
+                    <ul class="space-y-3 text-sm md:text-base text-gray-300 md:grid md:grid-cols-2 md:gap-x-8 md:space-y-0 text-left mx-auto max-w-md md:max-w-none">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-red-custom"></i> 8 vídeos de até 1 minuto</li>
+                        <li class="flex items-center gap-3 mt-3 md:mt-0"><i class="fas fa-check text-red-custom"></i> Roteiros Estratégicos</li>
+                        <li class="flex items-center gap-3 mt-3 md:mt-0"><i class="fas fa-check text-red-custom"></i> 1 Diária de Gravação</li>
+                        <li class="flex items-center gap-3 mt-3 md:mt-0"><i class="fas fa-check text-red-custom"></i> Edição + Thumbs + Legendas</li>
                     </ul>
                 </div>
 
-                <div class="w-full lg:w-1/2">
-                    <div class="bg-zinc-800 p-10 rounded-3xl border-t-4 border-red-custom shadow-2xl relative overflow-hidden text-center">
+                <div class="w-full lg:w-1/2 mt-6 md:mt-0">
+                    <div class="bg-zinc-800 p-8 md:p-10 rounded-3xl border-t-4 border-red-custom shadow-2xl relative overflow-hidden text-center max-w-md mx-auto">
                         <div class="absolute -right-10 -top-10 text-9xl text-zinc-700 opacity-20"><i class="fas fa-film"></i></div>
-                        <h3 class="text-2xl font-bold text-white mb-1 relative z-10 uppercase tracking-widest">Plano Profissional</h3>
-                        <div class="text-5xl font-black text-red-custom mb-6 relative z-10">R$ 749<span class="text-lg text-gray-400 font-normal">/mês</span></div>
-                        <p class="text-gray-400 mb-8 relative z-10 font-light text-sm italic">Observação: Temos planos personalizados focados no melhor custo-benefício para sua necessidade.</p>
-                        <a href="https://wa.me/5511941571824?text=Tenho%20interesse%20no%20pacote%20profissional%20de%20R$%20749" target="_blank" class="block w-full text-center bg-white text-black hover:bg-gray-200 font-bold py-4 rounded-xl transition-all relative z-10 text-lg uppercase tracking-tight shadow-xl shadow-black/30">
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-1 relative z-10 uppercase tracking-widest">Plano Profissional</h3>
+                        <div class="text-4xl md:text-5xl font-black text-red-custom mb-4 md:mb-6 relative z-10">R$ 749<span class="text-base md:text-lg text-gray-400 font-normal">/mês</span></div>
+                        <p class="text-gray-400 mb-6 md:mb-8 relative z-10 font-light text-xs md:text-sm italic px-2">Observação: Temos planos personalizados focados no melhor custo-benefício para sua necessidade.</p>
+                        <a href="https://wa.me/5511941571824?text=Tenho%20interesse%20no%20pacote%20profissional%20de%20R$%20749" target="_blank" class="block w-full text-center bg-white text-black hover:bg-gray-200 font-bold py-4 rounded-xl transition-all relative z-10 text-sm md:text-lg uppercase tracking-tight shadow-xl shadow-black/30">
                             Transformar Meu Perfil
                         </a>
                     </div>
@@ -174,28 +184,28 @@
         </div>
     </section>
 
-    <section id="drone" class="py-24 bg-zinc-900 border-t border-zinc-800 relative">
-        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
+    <section id="drone" class="py-20 md:py-24 bg-zinc-900 border-t border-zinc-800 relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-12">
             
-            <div class="w-full md:w-1/2 order-2 md:order-1">
-                <h2 class="text-4xl md:text-5xl font-black text-white mb-6 uppercase leading-tight">NOVA PERSPECTIVA ATRAVÉS DE <span class="text-red-custom">FILMAGENS AEREAS</span></h2>
+            <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
+                <h2 class="text-3xl md:text-5xl font-black text-white mb-5 md:mb-6 uppercase leading-tight">NOVA PERSPECTIVA ATRAVÉS DE <span class="text-red-custom">FILMAGENS AEREAS</span></h2>
                 
-                <p class="text-xl text-gray-400 mb-8 italic">"A filmagem aérea trouxe um valor que eu não imaginava para o meu marketing. Ficou outro nível!" - <span class="text-white font-semibold">Cliente Satisfeito</span></p>
+                <p class="text-base md:text-xl text-gray-400 mb-6 md:mb-8 italic">"A filmagem aérea trouxe um valor que eu não imaginava para o meu marketing. Ficou outro nível!" - <span class="text-white font-semibold">Cliente Satisfeito</span></p>
                 
-                <p class="text-gray-400 mb-8">Eleve o patamar da sua empresa comimagens cinematográficas focadas em destacar sua estrutura e localização.</p>
+                <p class="text-sm md:text-base text-gray-400 mb-6 md:mb-8">Eleve o patamar da sua empresa com imagens cinematográficas focadas em destacar sua estrutura e localização.</p>
 
-                <div class="bg-zinc-800 p-6 rounded-2xl border border-zinc-700 mb-8 text-center flex items-center justify-between gap-4 flex-wrap">
-                    <p class="text-white text-lg">Investimento <br>Cinematográfico</p>
-                    <p class="text-red-custom text-5xl font-black shrink-0">a partir de <br>R$ 250</p>
+                <div class="bg-zinc-800 p-5 md:p-6 rounded-2xl border border-zinc-700 mb-8 flex flex-col sm:flex-row items-center justify-center md:justify-between gap-4">
+                    <p class="text-white text-base md:text-lg">Investimento <br class="hidden sm:block">Cinematográfico</p>
+                    <p class="text-red-custom text-4xl md:text-5xl font-black text-center sm:text-right">a partir de <br class="hidden sm:block">R$ 250</p>
                 </div>
 
-                <a href="https://wa.me/5511941571824?text=Quero%20uma%20nova%20perspectiva%20com%20imagens%20de%20drone" target="_blank" class="block w-full md:inline-block bg-red-custom hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full transition-all text-center uppercase text-sm tracking-wider shadow-lg shadow-red-custom/20">
+                <a href="https://wa.me/5511941571824?text=Quero%20uma%20nova%20perspectiva%20com%20imagens%20de%20drone" target="_blank" class="block w-full md:inline-block bg-red-custom hover:bg-red-700 text-white font-bold py-4 px-6 md:px-10 rounded-full transition-all text-center uppercase text-xs md:text-sm tracking-wider shadow-lg shadow-red-custom/20">
                     Saber Mais Sobre Drone
                 </a>
             </div>
             
             <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
-                <div class="w-full max-w-[340px] aspect-[9/16] bg-zinc-800 rounded-2xl p-4 border border-zinc-700 hover:border-red-custom transition-all shadow-xl p-2 group">
+                <div class="w-full max-w-[280px] md:max-w-[340px] aspect-[9/16] bg-zinc-800 rounded-2xl p-3 md:p-4 border border-zinc-700 shadow-xl group">
                     <div class="relative rounded-xl overflow-hidden w-full h-full bg-black">
                         <iframe src="https://drive.google.com/file/d/1E_DT4U_KMned4Wx53EbGTlMU-h6jkFXs/preview" class="w-full h-full border-0" allow="autoplay" scrolling="no"></iframe>
                     </div>
@@ -204,71 +214,72 @@
         </div>
     </section>
 
-    <section id="casamento" class="py-24 bg-zinc-custom border-t border-zinc-800 relative overflow-hidden">
+    <section id="casamento" class="py-20 md:py-24 bg-zinc-custom border-t border-zinc-800 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
-            <h2 class="text-4xl md:text-5xl font-black text-white mb-6 uppercase">Filmes de <span class="text-red-custom">Casamento</span></h2>
-            <p class="text-gray-400 mb-12 max-w-2xl mx-auto font-light">Cada união é única, e seu filme também deve ser. Criamos memórias eternas com um olhar artístico e emocionante. Consulte nossos pacotes personalizados.</p>
+            <h2 class="text-3xl md:text-5xl font-black text-white mb-4 md:mb-6 uppercase">Filmes de <span class="text-red-custom">Casamento</span></h2>
+            <p class="text-sm md:text-base text-gray-400 mb-8 md:mb-12 max-w-2xl mx-auto font-light">Cada união é única, e seu filme também deve ser. Criamos memórias eternas com um olhar artístico e emocionante. Consulte nossos pacotes personalizados.</p>
             
-            <div class="rounded-2xl overflow-hidden aspect-video bg-black shadow-2xl border-2 border-zinc-700 max-w-4xl mx-auto mb-12 p-1">
+            <div class="rounded-2xl overflow-hidden aspect-video bg-black shadow-2xl border-2 border-zinc-700 max-w-4xl mx-auto mb-8 md:mb-12 p-1">
                 <iframe src="https://drive.google.com/file/d/1zNBj_Bogj7pLzWISSE6A9yXyyS5hkMAq/preview" class="w-full h-full border-0" allow="autoplay" scrolling="no"></iframe>
             </div>
 
-            <a href="https://wa.me/5511941571824?text=Gostaria%20de%20um%20or%C3%A7amento%20personalizado%20para%20filme%20de%20casamento." target="_blank" class="border-2 border-red-custom text-white hover:bg-red-custom font-bold py-4 px-10 rounded-full transition-all inline-flex items-center gap-3 uppercase text-sm tracking-wider">
-                <i class="fab fa-whatsapp text-xl text-green-500"></i> Orçamento de Casamento
+            <a href="https://wa.me/5511941571824?text=Gostaria%20de%20um%20or%C3%A7amento%20personalizado%20para%20filme%20de%20casamento." target="_blank" class="border-2 border-red-custom text-white hover:bg-red-custom font-bold py-3 md:py-4 px-6 md:px-10 rounded-full transition-all inline-flex items-center justify-center gap-3 uppercase text-xs md:text-sm tracking-wider w-full sm:w-auto">
+                <i class="fab fa-whatsapp text-lg md:text-xl text-green-500"></i> Orçamento de Casamento
             </a>
         </div>
     </section>
 
-    <section class="py-24 bg-zinc-900 border-t border-zinc-800 relative overflow-hidden">
+    <section class="py-20 md:py-24 bg-zinc-900 border-t border-zinc-800 relative overflow-hidden">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-custom/5 rounded-full blur-3xl -z-10"></div>
         
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-black text-white mb-16 uppercase">O que dizem <br><span class="text-red-custom">nossos clientes</span></h2>
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-10 md:mb-16 uppercase">O que dizem <br><span class="text-red-custom">nossos clientes</span></h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-left items-stretch">
                 
-                <div class="bg-zinc-800/80 p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all">
-                    <i class="fas fa-quote-left text-4xl text-zinc-600 absolute top-4 right-6"></i>
-                    <div class="flex text-yellow-500 mb-4 text-sm">
+                <div class="bg-zinc-800/80 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all">
+                    <i class="fas fa-quote-left text-3xl md:text-4xl text-zinc-600 absolute top-4 right-6"></i>
+                    <div class="flex text-yellow-500 mb-4 text-xs md:text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-300 italic mb-6 flex-grow font-light">"O trabalho do Lincoln mudou completamente o perfil da minha clínica. Os vídeos são dinâmicos e a retenção realmente faz a diferença na captação de novos pacientes pelo Instagram."</p>
-                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4">— Dra. Mariana S., <span class="text-sm font-normal text-gray-400">Dentista</span></div>
+                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"O trabalho do Lincoln mudou completamente o perfil da minha clínica. Os vídeos são dinâmicos e a retenção realmente faz a diferença na captação de novos pacientes pelo Instagram."</p>
+                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4 text-sm md:text-base">— Dra. Mariana S., <span class="text-xs md:text-sm font-normal text-gray-400">Dentista</span></div>
                 </div>
 
-                <div class="bg-zinc-800/80 p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all">
-                    <i class="fas fa-quote-left text-4xl text-zinc-600 absolute top-4 right-6"></i>
-                    <div class="flex text-yellow-500 mb-4 text-sm">
+                <div class="bg-zinc-800/80 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all">
+                    <i class="fas fa-quote-left text-3xl md:text-4xl text-zinc-600 absolute top-4 right-6"></i>
+                    <div class="flex text-yellow-500 mb-4 text-xs md:text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-300 italic mb-6 flex-grow font-light">"Profissionalismo do começo ao fim. A qualidade da captação e da edição me impressionaram muito. Sem dúvidas, o melhor investimento em marketing que fiz no ano para minha clínica de estética."</p>
-                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4">— Carlos Mendes, <span class="text-sm font-normal text-gray-400">Estética Avançada</span></div>
+                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"Profissionalismo do começo ao fim. A qualidade da captação e da edição me impressionaram muito. Sem dúvidas, o melhor investimento em marketing que fiz no ano para minha clínica de estética."</p>
+                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4 text-sm md:text-base">— Carlos Mendes, <span class="text-xs md:text-sm font-normal text-gray-400">Estética Avançada</span></div>
                 </div>
 
-                <div class="bg-zinc-800/80 p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all hidden lg:flex">
-                    <i class="fas fa-quote-left text-4xl text-zinc-600 absolute top-4 right-6"></i>
-                    <div class="flex text-yellow-500 mb-4 text-sm">
+                <div class="bg-zinc-800/80 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all">
+                    <i class="fas fa-quote-left text-3xl md:text-4xl text-zinc-600 absolute top-4 right-6"></i>
+                    <div class="flex text-yellow-500 mb-4 text-xs md:text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-300 italic mb-6 flex-grow font-light">"Excelente custo-benefício. A L.A. Films entrega vídeos que prendem a atenção do início ao fim e convertem seguidores em agendamentos de forma muito eficaz. Recomendo!"</p>
-                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4">— Clínica Sorriso, <span class="text-sm font-normal text-gray-400">Odontologia Especializada</span></div>
+                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"Excelente custo-benefício. A L.A. Films entrega vídeos que prendem a atenção do início ao fim e convertem seguidores em agendamentos de forma muito eficaz. Recomendo!"</p>
+                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4 text-sm md:text-base">— Clínica Sorriso, <span class="text-xs md:text-sm font-normal text-gray-400">Odontologia Especializada</span></div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/5511941571824?text=Olá!%20Gostaria%20de%20receber%20um%20orçamento%20personalizado." target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_4px_15px_rgba(34,197,94,0.4)] hover:scale-110 transition-all z-50">
+    <a href="https://wa.me/5511941571824?text=Olá!%20Gostaria%20de%20receber%20um%20orçamento%20personalizado." target="_blank" class="fixed bottom-4 right-4 md:bottom-6 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-[0_4px_15px_rgba(34,197,94,0.4)] hover:scale-110 transition-all z-50">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <footer class="bg-black py-12 border-t border-zinc-800 text-center relative z-10">
+    <footer class="bg-black py-10 md:py-12 border-t border-zinc-800 text-center relative z-10">
         <div class="max-w-7xl mx-auto px-6">
-            <img src="LOGO WH.png" alt="L.A. Films" class="h-10 mx-auto mb-6 opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
-            <div class="flex justify-center gap-6 mb-8">
+            <img src="LOGO WH.png" alt="L.A. Films" class="h-8 md:h-10 mx-auto mb-6 opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+            <div class="flex justify-center gap-6 mb-6 md:mb-8">
                 <a href="https://www.instagram.com/lincolnalm_films/" class="text-gray-600 hover:text-red-custom text-xl transition-transform hover:scale-110"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/5511941571824" class="text-gray-600 hover:text-green-500 text-xl transition-transform hover:scale-110"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <p class="text-zinc-700 text-sm">© 2026 L.A. Films. Produção Audiovisual Cinematográfica. Todos os direitos reservados.</p>
+            <p class="text-zinc-700 text-xs md:text-sm">© 2026 L.A. Films. Produção Audiovisual Cinematográfica. Todos os direitos reservados.</p>
         </div>
     </footer>
 
