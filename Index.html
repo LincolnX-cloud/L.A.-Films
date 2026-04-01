@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln | Produção de Vídeos de Alta Retenção</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tighter">LINCOLN<span class="text-blue-500">.MOV</span></span>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#inicio" class="hover:text-blue-400 transition">Início</a>
+                <a href="#portfolio" class="hover:text-blue-400 transition">Portfólio</a>
+                <a href="#contato" class="hover:text-blue-400 transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="pt-32 pb-20 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Vídeos de <span class="text-blue-500">Alta Retenção</span> para Especialistas</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto mb-8 text-lg">Transformando clínicas de estética e odontologia em autoridade digital através de conteúdo estratégico.</p>
+        <a href="#portfolio" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-bold transition">Ver Meus Trabalhos</a>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-gray-800/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Últimos Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700">
+                    <div class="aspect-[9/16] bg-gray-800 flex items-center justify-center">
+                        <span class="text-gray-500">https://www.instagram.com/reel/DTTv0Ttkcls/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==]</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold">Vídeo Estratégico - Dentista X</h3>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700">
+                    <div class="aspect-[9/16] bg-gray-800 flex items-center justify-center">
+                        <span class="text-gray-500">[https://www.instagram.com/reel/DTTv0Ttkcls/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==]</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold">Apresentação - Esteticista Y</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/SEUNUMERO" target="_blank" class="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer id="contato" class="py-10 border-t border-gray-800 text-center">
+        <p class="text-gray-500">© 2026 Lincoln Conteúdo Visual. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
