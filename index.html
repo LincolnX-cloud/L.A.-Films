@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L.A. Films | Filmes de Alta Retenção por Lincoln Almeida</title>
+    <title>L.A. Films | Produção Audiovisual Cinematográfica</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
             font-family: 'Montserrat', sans-serif;
         }
         
-        /* Paleta de cores personalizada */
+        /* Paleta de cores personalizada (Preto e Vermelho) */
         .bg-zinc-custom { background-color: #121214; }
         .text-red-custom { color: #E50914; }
         .bg-red-custom { background-color: #E50914; }
@@ -36,19 +36,18 @@
         .triangle-bg {
             position: absolute;
             top: 0;
-            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
-            height: 50%;
-            background: linear-gradient(135deg, rgba(229, 9, 20, 0.15) 0%, transparent 70%);
-            clip-path: polygon(100% 0, 0 0, 100% 100%);
+            height: 60%;
+            background: linear-gradient(180deg, rgba(229, 9, 20, 0.15) 0%, transparent 100%);
             z-index: 0;
         }
 
         @media (min-width: 768px) {
             .triangle-bg {
-                width: 40%;
-                height: 40%;
-                background: linear-gradient(135deg, rgba(229, 9, 20, 0.1) 0%, transparent 60%);
+                width: 60%;
+                background: radial-gradient(circle, rgba(229, 9, 20, 0.15) 0%, transparent 70%);
             }
         }
     </style>
@@ -68,7 +67,7 @@
                 <a href="https://wa.me/5511941571824?text=Ol%C3%A1%20Lincoln!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20de%20v%C3%ADdeo." target="_blank" class="text-gray-400 hover:text-green-500 text-xl md:text-2xl transition-transform hover:scale-110">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="https://wa.me/5511941571824?text=Ol%C3%A1%20Lincoln!%20Gostaria%20de%20agendar%20uma%20conversa%20para%20receber%20uma%20proposta." target="_blank" class="hidden md:inline-block bg-red-custom hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition-all uppercase text-sm tracking-wider">
+                <a href="https://wa.me/5511941571824?text=Ol%C3%A1%20Lincoln!%20Gostaria%20de%20agendar%20uma%20conversa%20para%20receber%20uma%20proposta%20audiovisual." target="_blank" class="hidden md:inline-block bg-red-custom hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition-all uppercase text-sm tracking-wider">
                     Fazer Orçamento
                 </a>
             </div>
@@ -78,34 +77,21 @@
     <section id="inicio" class="relative min-h-screen flex items-center py-10 overflow-hidden">
         <div class="triangle-bg"></div>
         
-        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-12">
-            
-            <div class="w-full md:w-2/5 flex justify-center order-1 md:order-2 mt-4 md:mt-0">
-                <div class="relative w-full max-w-[280px] md:max-w-[340px] aspect-[864/1184] border-4 border-zinc-800 rounded-3xl overflow-hidden shadow-2xl shadow-red-custom/10 rotate-2 hover:rotate-0 transition-all duration-500 group">
-                    <img src="FOTOO221.png" alt="Lincoln Almeida - L.A. Films" class="w-full h-full object-cover object-center-top">
-                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
-                    <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6 text-white z-10">
-                        <p class="font-bold text-base md:text-lg">Lincoln Almeida</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Diretor de Estratégia Audiovisual</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full md:w-3/5 text-center md:text-left order-2 md:order-1">
-                <p class="text-red-custom font-bold tracking-widest uppercase mb-3 text-xs md:text-sm">L.A. Films | Por Lincoln Almeida</p>
-                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-tight mb-5 md:mb-6 uppercase">
-                    RETENÇÃO QUE GERA <br class="hidden md:block"><span class="text-red-custom">RESULTADOS.</span>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center justify-center text-center gap-8">
+            <div class="w-full max-w-4xl mt-10 md:mt-0">
+                <p class="text-red-custom font-bold tracking-[0.2em] uppercase mb-4 text-xs md:text-sm">L.A. Films | Por Lincoln Almeida</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6 uppercase">
+                    A SUA MARCA MERECE UMA IMAGEM <span class="text-red-custom">CINEMATOGRÁFICA.</span>
                 </h1>
-                <p class="text-base md:text-xl text-gray-400 mb-8 max-w-2xl font-light mx-auto md:mx-0">
-                    Desde a autoridade de um consultório para dentistas, advogados e psicólogos, até a imensidão de imagens épicas com drone. Oferecemos o melhor porque trabalhamos com o melhor.
+                <p class="text-base md:text-xl text-gray-400 mb-10 font-light mx-auto max-w-3xl leading-relaxed">
+                    Elevamos o nível da comunicação da sua empresa através de vídeos estratégicos. De clínicas e escritórios corporativos até grandes eventos, entregamos alta qualidade, retenção e credibilidade para o seu negócio.
                 </p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#portfolio" class="bg-transparent border-2 border-red-custom text-white hover:bg-red-custom font-bold py-3 px-8 rounded-full transition-all uppercase tracking-wider text-xs md:text-sm">
-                        Ver Meus Trabalhos
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#portfolio" class="bg-transparent border-2 border-red-custom text-white hover:bg-red-custom font-bold py-4 px-10 rounded-full transition-all uppercase tracking-wider text-sm">
+                        Ver Nosso Portfólio
                     </a>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -113,7 +99,7 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-12 md:mb-16">
                 <h2 class="text-3xl md:text-5xl font-black text-white mb-3 md:mb-4 uppercase">Nosso <span class="text-red-custom">Portfólio</span></h2>
-                <p class="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">Confira alguns projetos produzidos para os nossos clientes.</p>
+                <p class="text-sm md:text-base text-gray-400 max-w-2xl mx-auto">Confira alguns projetos produzidos para empresas e profissionais de destaque.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch">
@@ -144,7 +130,7 @@
                     </div>
                     <h3 class="text-2xl font-black text-white mb-2 uppercase tracking-tight leading-tight">O Próximo <br>é o Seu</h3>
                     <p class="text-gray-400 text-xs md:text-sm mb-6 md:mb-8 px-2 font-light">Eleve o nível do seu conteúdo e atraia o público certo para o seu negócio.</p>
-                    <a href="https://wa.me/5511941571824?text=Quero%20agendar%20uma%20grava%C3%A7%C3%A3o%20para%20o%20meu%20pr%C3%B3ximo%20v%C3%ADdeo" target="_blank" class="bg-red-custom hover:bg-red-700 text-white font-bold py-3 px-6 md:px-8 rounded-full transition-all uppercase text-xs md:text-sm tracking-wider">
+                    <a href="https://wa.me/5511941571824?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20grava%C3%A7%C3%A3o%20para%20a%20minha%20empresa." target="_blank" class="bg-red-custom hover:bg-red-700 text-white font-bold py-3 px-6 md:px-8 rounded-full transition-all uppercase text-xs md:text-sm tracking-wider">
                         Agendar Gravação
                     </a>
                 </div>
@@ -153,97 +139,85 @@
         </div>
     </section>
 
-    <section id="planos" class="py-20 md:py-24 bg-zinc-custom relative border-t border-zinc-800">
+    <section id="servicos" class="py-20 md:py-24 bg-zinc-custom border-t border-zinc-800 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-10 md:gap-12">
-                <div class="w-full lg:w-1/2 text-center md:text-left">
-                    <h2 class="text-3xl md:text-4xl font-black text-white mb-4 md:mb-6 uppercase">O Pacote Completo <br><span class="text-red-custom">de Crescimento</span></h2>
-                    <p class="text-gray-400 text-base md:text-lg mb-5 md:mb-6">Trabalhamos de forma estratégica para profissionais presenciais (Dentistas, Advogados, Psicólogos, Esteticistas...).</p>
-                    <p class="text-gray-300 text-sm md:text-base mb-8 font-light italic bg-zinc-900/50 p-4 border-l-2 border-red-custom rounded-r-md text-left">"Nosso fluxo capta a essência do seu serviço presencial e o transforma em autoridade digital. É perfeito para quem vende serviços e precisa converter seguidores em clientes."</p>
-                    
-                    <ul class="space-y-3 text-sm md:text-base text-gray-300 md:grid md:grid-cols-2 md:gap-x-8 md:space-y-0 text-left mx-auto max-w-md md:max-w-none">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-red-custom"></i> 4 vídeos</li>
-                        <li class="flex items-center gap-3 mt-3 md:mt-0"><i class="fas fa-check text-red-custom"></i> Roteiros Estratégicos</li>
-                        <li class="flex items-center gap-3 mt-3 md:mt-0"><i class="fas fa-check text-red-custom"></i> Gravação Profissional</li>
-                        <li class="flex items-center gap-3 mt-3 md:mt-0"><i class="fas fa-check text-red-custom"></i> Edição Dinâmica</li>
-                    </ul>
-                </div>
+            <div class="text-center mb-16">
+                <p class="text-red-custom font-bold tracking-widest uppercase mb-3 text-sm">O que nós fazemos</p>
+                <h2 class="text-3xl md:text-5xl font-black text-white mb-4 uppercase">Soluções <span class="text-red-custom">Audiovisuais</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Produzimos materiais que conectam, convertem e posicionam sua marca como líder no mercado.</p>
+            </div>
 
-                <div class="w-full lg:w-1/2 mt-6 md:mt-0">
-                    <div class="bg-zinc-800 p-8 md:p-10 rounded-3xl border-t-4 border-red-custom shadow-2xl relative overflow-hidden text-center max-w-md mx-auto">
-                        <div class="absolute -right-10 -top-10 text-9xl text-zinc-700 opacity-20"><i class="fas fa-film"></i></div>
-                        <h3 class="text-xl md:text-2xl font-bold text-white mb-1 relative z-10 uppercase tracking-widest">Plano Profissional a partir de</h3>
-                        <div class="text-4xl md:text-5xl font-black text-red-custom mb-4 md:mb-6 relative z-10">R$ 760<span class="text-base md:text-lg text-gray-400 font-normal">/mês</span></div>
-                        <p class="text-gray-400 mb-6 md:mb-8 relative z-10 font-light text-xs md:text-sm italic px-2">Observação: Temos planos personalizados focados no melhor custo-benefício para sua necessidade.</p>
-                        <a href="https://wa.me/5511941571824?text=Tenho%20interesse%20no%20pacote%20profissional%20de%20R$%20749" target="_blank" class="block w-full text-center bg-white text-black hover:bg-gray-200 font-bold py-4 rounded-xl transition-all relative z-10 text-sm md:text-lg uppercase tracking-tight shadow-xl shadow-black/30">
-                            Transformar Meu Perfil
-                        </a>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-zinc-900 border border-zinc-800 hover:border-red-custom p-8 rounded-2xl transition-all group">
+                    <div class="w-14 h-14 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-custom transition-colors">
+                        <i class="fas fa-building text-2xl text-white"></i>
                     </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Vídeos Institucionais</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">Apresente a infraestrutura, a equipe e a missão da sua empresa, clínica ou indústria. Criamos takes cinematográficos que passam confiança imediata e demonstram a grandiosidade do seu negócio.</p>
+                    <a href="https://wa.me/5511941571824?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20v%C3%ADdeos%20institucionais." target="_blank" class="text-red-custom font-bold uppercase text-sm hover:text-white transition-colors">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
                 </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 hover:border-red-custom p-8 rounded-2xl transition-all group">
+                    <div class="w-14 h-14 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-custom transition-colors">
+                        <i class="fas fa-mobile-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Comerciais para Redes Sociais</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">Vídeos dinâmicos (formato Reels/TikTok) focados em alta retenção. Roteirizamos e gravamos conteúdos que atraem atenção e transformam seguidores em clientes reais para a sua loja ou consultório.</p>
+                    <a href="https://wa.me/5511941571824?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20v%C3%ADdeos%20para%20redes%20sociais." target="_blank" class="text-red-custom font-bold uppercase text-sm hover:text-white transition-colors">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 hover:border-red-custom p-8 rounded-2xl transition-all group">
+                    <div class="w-14 h-14 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-custom transition-colors">
+                        <i class="fas fa-home text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Audiovisual Imobiliário</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">Valorizamos imóveis de alto padrão e projetos arquitetônicos. Imagens aéreas de drone, tours imersivos e edição de luxo que aceleram vendas para construtoras, arquitetos e corretores.</p>
+                    <a href="https://wa.me/5511941571824?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20servi%C3%A7os%20de%20v%C3%ADdeo%20imobili%C3%A1rio." target="_blank" class="text-red-custom font-bold uppercase text-sm hover:text-white transition-colors">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-800 hover:border-red-custom p-8 rounded-2xl transition-all group">
+                    <div class="w-14 h-14 bg-zinc-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-custom transition-colors">
+                        <i class="fas fa-glass-cheers text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Cobertura de Eventos</h3>
+                    <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">De inaugurações de lojas e workshops corporativos até casamentos inesquecíveis. Captamos a essência e a emoção do seu evento para gerar um material que ficará para a história.</p>
+                    <a href="https://wa.me/5511941571824?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20cobertura%20de%20evento." target="_blank" class="text-red-custom font-bold uppercase text-sm hover:text-white transition-colors">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="imobiliario" class="py-20 md:py-24 bg-zinc-900 border-t border-zinc-800 relative">
-        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-12">
-            
-            <div class="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
-                <h2 class="text-3xl md:text-5xl font-black text-white mb-5 md:mb-6 uppercase leading-tight">REVELE A GRANDEZA DO SEU <br class="hidden md:block"><span class="text-red-custom">PORTFÓLIO IMOBILIÁRIO</span></h2>
-                
-                <p class="text-gray-300 text-sm md:text-base mb-8 font-light italic bg-zinc-800/50 p-4 border-l-2 border-red-custom rounded-r-md text-left">"Nossa captação une a imensidão das imagens aéreas com a sofisticação dos detalhes internos. É a ferramenta definitiva para encantar compradores e acelerar o fechamento de contratos."</p>
-                
-                <p class="text-sm md:text-base text-gray-400 mb-6 md:mb-8">Mude a perspectiva do seu cliente. Entregue uma experiência visual que enche os olhos, valoriza cada metro quadrado e eleva o padrão dos seus anúncios.</p>
-
-                <div class="bg-zinc-800 p-5 md:p-6 rounded-2xl border border-zinc-700 mb-4 flex flex-col sm:flex-row items-center justify-center md:justify-between gap-4">
-                    <p class="text-white text-base md:text-lg">Investimento <br class="hidden sm:block">Cinematográfico</p>
-                    <p class="text-red-custom text-4xl md:text-5xl font-black text-center sm:text-right">A partir de <br class="hidden sm:block">R$ 350</p>
-                </div>
-                <p class="text-gray-500 text-xs text-center md:text-right mb-8">*Consulte nossas condições facilitadas de parcelamento.</p>
-
-                <a href="https://wa.me/5511941571824?text=Quero%20destacar%20meus%20imóveis%20com%20vídeos%20cinematográficos" target="_blank" class="block w-full md:inline-block bg-red-custom hover:bg-red-700 text-white font-bold py-4 px-6 md:px-10 rounded-full transition-all text-center uppercase text-xs md:text-sm tracking-wider shadow-lg shadow-red-custom/20">
-                    Consultar Plano Imobiliário
-                </a>
-            </div>
-            
-            <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
-                <div class="w-full max-w-[280px] md:max-w-[340px] aspect-[9/16] bg-zinc-800 rounded-2xl p-2 md:p-3 border border-zinc-700 shadow-xl group overflow-hidden">
-                    <video autoplay muted loop playsinline class="w-full h-full object-cover rounded-xl bg-black">
-                        <source src="IMOBPORT1.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="casamento" class="py-20 md:py-24 bg-zinc-custom border-t border-zinc-800 relative overflow-hidden">
+    <section id="casamento" class="py-20 md:py-24 bg-zinc-900 border-t border-zinc-800 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
             <h2 class="text-3xl md:text-5xl font-black text-white mb-4 md:mb-6 uppercase">Filmes de <span class="text-red-custom">Casamento</span></h2>
-            <p class="text-sm md:text-base text-gray-400 mb-8 md:mb-12 max-w-2xl mx-auto font-light">Cada união é única, e seu filme também deve ser. Criamos memórias eternas com um olhar artístico e emocionante. Consulte nossos pacotes personalizados.</p>
+            <p class="text-sm md:text-base text-gray-400 mb-8 md:mb-12 max-w-2xl mx-auto font-light">Cada união é única, e seu filme também deve ser. Criamos memórias eternas com um olhar artístico e emocionante. Consulte nossos pacotes de cobertura.</p>
             
             <div class="rounded-2xl overflow-hidden aspect-video bg-black shadow-2xl border-2 border-zinc-700 max-w-4xl mx-auto mb-8 md:mb-12 p-1">
                 <iframe src="https://drive.google.com/file/d/1zNBj_Bogj7pLzWISSE6A9yXyyS5hkMAq/preview" class="w-full h-full border-0" allow="autoplay" scrolling="no"></iframe>
             </div>
 
-            <a href="https://wa.me/5511941571824?text=Gostaria%20de%20um%20or%C3%A7amento%20personalizado%20para%20filme%20de%20casamento." target="_blank" class="border-2 border-red-custom text-white hover:bg-red-custom font-bold py-3 md:py-4 px-6 md:px-10 rounded-full transition-all inline-flex items-center justify-center gap-3 uppercase text-xs md:text-sm tracking-wider w-full sm:w-auto">
+            <a href="https://wa.me/5511941571824?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20personalizado%20para%20filme%20de%20casamento." target="_blank" class="border-2 border-red-custom text-white hover:bg-red-custom font-bold py-3 md:py-4 px-6 md:px-10 rounded-full transition-all inline-flex items-center justify-center gap-3 uppercase text-xs md:text-sm tracking-wider w-full sm:w-auto">
                 <i class="fab fa-whatsapp text-lg md:text-xl text-green-500"></i> Orçamento de Casamento
             </a>
         </div>
     </section>
 
-    <section class="py-20 md:py-24 bg-zinc-900 border-t border-zinc-800 relative overflow-hidden">
+    <section class="py-20 md:py-24 bg-zinc-custom border-t border-zinc-800 relative overflow-hidden">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-custom/5 rounded-full blur-3xl -z-10"></div>
         
-        <div class="max-w-7xl mx-auto px-6 text-center">
+        <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-black text-white mb-10 md:mb-16 uppercase">O que dizem <br><span class="text-red-custom">nossos clientes</span></h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-left items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-left items-stretch">
                 
                 <div class="bg-zinc-800/80 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all">
                     <i class="fas fa-quote-left text-3xl md:text-4xl text-zinc-600 absolute top-4 right-6"></i>
                     <div class="flex text-yellow-500 mb-4 text-xs md:text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"O trabalho do Lincoln transmitiu exatamente a seriedade e a estrutura do meu consultório. O material construiu uma credibilidade enorme para o meu perfil, e o impacto nos agendamentos de novos pacientes foi real e muito rápido."</p>
+                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"O trabalho da L.A. Films transmitiu exatamente a seriedade e a estrutura do meu consultório. O material construiu uma credibilidade enorme para o meu perfil, e o impacto nos agendamentos de novos pacientes foi real e muito rápido."</p>
                     <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4 text-sm md:text-base">— Dra. Luana de Medeiros, <span class="text-xs md:text-sm font-normal text-gray-400">Odontologia Especializada</span></div>
                 </div>
 
@@ -261,15 +235,24 @@
                     <div class="flex text-yellow-500 mb-4 text-xs md:text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"Na venda de imóveis, a apresentação visual é o que define o interesse do cliente. As imagens de drone e a edição dinâmica valorizaram o meu portfólio de uma forma incrível. O vídeo retém a atenção do comprador e facilita muito o contato comercial."</p>
-                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4 text-sm md:text-base">— André Pinheiro, <span class="text-xs md:text-sm font-normal text-gray-400">Corretor de Imóveis</span></div>
+                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"Não temos palavras para agradecer. As fotos ficaram perfeitas e o vídeo capturou exatamente a emoção do nosso grande dia. Assistir ao material é reviver tudo de novo com a mesma intensidade. Recomendamos de olhos fechados!"</p>
+                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4 text-sm md:text-base">— Márcio e Isabelli, <span class="text-xs md:text-sm font-normal text-gray-400">Casamento</span></div>
+                </div>
+
+                <div class="bg-zinc-800/80 p-6 md:p-8 rounded-2xl backdrop-blur-sm border border-zinc-700 relative flex flex-col hover:border-red-custom/40 transition-all">
+                    <i class="fas fa-quote-left text-3xl md:text-4xl text-zinc-600 absolute top-4 right-6"></i>
+                    <div class="flex text-yellow-500 mb-4 text-xs md:text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-sm md:text-base text-gray-300 italic mb-6 flex-grow font-light">"O vídeo do nosso casamento superou todas as expectativas, ficou com uma qualidade de cinema! A sensibilidade para pegar os momentos certos e a edição foram impecáveis. Todo mundo que assiste se emociona junto com a gente."</p>
+                    <div class="font-bold text-white mt-auto border-t border-zinc-700 pt-4 text-sm md:text-base">— André e Rebeca, <span class="text-xs md:text-sm font-normal text-gray-400">Casamento</span></div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/5511941571824?text=Olá!%20Gostaria%20de%20receber%20um%20orçamento%20personalizado." target="_blank" class="fixed bottom-4 right-4 md:bottom-6 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-[0_4px_15px_rgba(34,197,94,0.4)] hover:scale-110 transition-all z-50">
+    <a href="https://wa.me/5511941571824?text=Ol%C3%A1!%20Gostaria%20de%20receber%20um%20or%C3%A7amento%20audiovisual." target="_blank" class="fixed bottom-4 right-4 md:bottom-6 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-[0_4px_15px_rgba(34,197,94,0.4)] hover:scale-110 transition-all z-50">
         <i class="fab fa-whatsapp"></i>
     </a>
 
